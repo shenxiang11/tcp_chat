@@ -1,0 +1,15 @@
+[package]
+name = "tcp_chat"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.89"
+tokio = { version = "1.40.0", features = ["rt", "rt-multi-thread", "macros", "net"] }
+tracing-subscriber = "0.3.18"
+log = "0.4.22"
+tracing = "0.1.40"
+tokio-util = { version = "0.7.12", features = ["codec"] }
+dashmap = "6.1.0"
+tokio-stream = "0.1.16"
+futures = "0.3.30"
